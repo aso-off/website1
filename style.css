@@ -1,0 +1,304 @@
+shr {
+  border: 1px solid rgba(255, 255, 255, 0.04);
+}
+body {
+  background: linear-gradient(90deg, #000000 0%, #333333 100%);
+  color: #ffffff;
+  font-family: "Jura", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+h3 {
+  margin-left: 20px;
+}
+h2 {
+  font-style: normal;
+  font-weight: 40;
+  top: 45px;
+  line-height: 18px;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+}
+.html:hover,
+.css:hover,
+.react:hover,
+.vue:hover,
+.json:hover,
+.javascript:hover,
+.typescript:hover,
+.telegram:hover,
+.github:hover,
+.lolz:hover,
+.steam:hover {
+  scale: 1.1;
+  transition: 0.1s ease;
+}
+.using,
+.social {
+  margin-left: 80px;
+  display: flex;
+}
+p {
+  margin-left: 5px;
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 22px;
+  letter-spacing: 0.05em;
+  color: #111111;
+}
+.html {
+  background-color: #e09070ee;
+  margin-left: 20px;
+  display: flex;
+  width: 150px;
+  height: 60px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.css {
+  background-color: #2f8ce9ec;
+  margin-left: 20px;
+  display: flex;
+  width: 150px;
+  height: 60px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.javascript {
+  background-color: #ffff8bad;
+  margin-left: 20px;
+  display: flex;
+  width: 200px;
+  height: 60px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.json {
+  background-color: #ebdda8a5;
+  margin-left: 20px;
+  display: flex;
+  width: 150px;
+  height: 60px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.react {
+  background-color: #00c8faa7;
+  margin-left: 20px;
+  display: flex;
+  width: 150px;
+  height: 60px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.vue {
+  background-color: #46c876a7;
+  margin-left: 20px;
+  display: flex;
+  width: 150px;
+  height: 60px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.typescript {
+  background-color: #4a9bd6;
+  margin-left: 20px;
+  display: flex;
+  width: 200px;
+  height: 60px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.github {
+  background-color: #ffffffc3;
+  margin-left: 20px;
+  display: flex;
+  width: 180px;
+  height: 60px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.lolz {
+  background-color: #2e2e2e;
+  margin-left: 20px;
+  display: flex;
+  width: 180px;
+  height: 60px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.telegram {
+  background-color: #1d7fad;
+  margin-left: 20px;
+  display: flex;
+  width: 180px;
+  height: 60px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.steam {
+  background-color: #2f6ad8cb;
+  margin-left: 20px;
+  display: flex;
+  width: 180px;
+  height: 60px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+@media (max-width: 1000px) {
+  p {
+    visibility: hidden;
+    display: none;
+  }
+  .html,
+  .css,
+  .javascript,
+  .typescript,
+  .react,
+  .vue,
+  .json,
+  .telegram,
+  .github,
+  .lolz,
+  .steam {
+    width: 70px;
+    text-align: center;
+  }
+}
+img {
+  border-radius: 22%;
+  padding: 6px;
+}
+.white {
+  color: white;
+}
+
+@media (max-width: 1000px) {
+  .html p,
+  .css p,
+  .javascript p,
+  .typescript p,
+  .react p,
+  .vue p,
+  .json p,
+  .telegram p,
+  .github p,
+  .lolz p,
+  .steam p {
+    display: block;
+  }
+}
+
+body {
+  background: linear-gradient(
+    90deg,
+    #000000 0%,
+    #111111 30%,
+    #222222 50%,
+    #111111 70%,
+    #000000 100%
+  );
+  background-size: 200% 200%;
+  animation: gradient 7s ease infinite;
+  color: #ffffff;
+  font-family: "Jura", sans-serif;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+#candle {
+  width: 50px;
+  height: 100px;
+  background: linear-gradient(to bottom, #ffcc00 0%, #ff9900 50%, #ff6600 100%);
+  border-radius: 50% 50% 0 0;
+  box-shadow: 0 0 20px #ff9900;
+  position: relative;
+  overflow: hidden;
+}
+
+#flame {
+  width: 30px;
+  height: 50px;
+  background: linear-gradient(
+    to bottom,
+    transparent 0%,
+    #ffcc00 20%,
+    #ff9900 40%,
+    #ff6600 60%,
+    #ff3300 80%,
+    transparent 100%
+  );
+  border-radius: 50%;
+  position: absolute;
+  bottom: -25px;
+  left: 10px;
+  animation: flicker 0.8s infinite;
+}
+
+@keyframes flicker {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.2);
+  }
+  50% {
+    transform: scale(1);
+  }
+  75% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+/* время */
+#time-container {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+#time {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+}
+#date {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* video */
+.video-container {
+  width: 30%;
+  height: 40%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  margin-right: 30px;
+}
+
+.video-container iframe {
+  width: 100%;
+  height: auto;
+}
+.video-container {
+  position: absolute;
+  right: 0;
+  top: 60%;
+  transform: translateY(-20%);
+}
