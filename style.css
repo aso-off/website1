@@ -196,13 +196,16 @@ body {
   background: linear-gradient(
     90deg,
     #000000 0%,
-    #111111 30%,
-    #222222 50%,
-    #111111 70%,
-    #000000 100%
+    #111111 15%,
+    #222222 30%,
+    #111111 45%,
+    #000000 60%,
+    #111111 75%,
+    #222222 90%,
+    #111111 100%
   );
-  background-size: 200% 200%;
-  animation: gradient 7s ease infinite;
+  background-size: 400% 400%; /* Increase the background size to make the wave wider */
+  animation: gradient 10s ease-in-out infinite; /* Increase the duration and change the timing function to make the wave smoother */
   color: #ffffff;
   font-family: "Jura", sans-serif;
 }
@@ -282,23 +285,94 @@ body {
   font-weight: bold;
 }
 
-/* video */
-.video-container {
-  width: 30%;
-  height: 40%;
-  padding: 20px;
-  display: flex;
-  justify-content: center;
-  margin-right: 30px;
+#stats-container {
+  position: absolute;
+  top: 35px;
+  left: 20px;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+}
+.button {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 12px;
 }
 
-.video-container iframe {
-  width: 100%;
-  height: auto;
+@media only screen and (max-width: 767px) {
+  body {
+    font-size: 14px;
+  }
+
+  .button {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
 }
-.video-container {
-  position: absolute;
-  right: 0;
-  top: 60%;
-  transform: translateY(-20%);
+
+@media only screen and (max-width: 479px) {
+  body {
+    font-size: 12px;
+  }
+
+  .button {
+    padding: 5px 10px;
+    font-size: 12px;
+  }
+}
+* {
+  margin: 10;
+  padding: 10;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+}
+.container {
+  height: 300px;
+  overflow: scroll;
+}
+html,
+body {
+  overflow: hidden;
+  height: 100%;
+}
+#kaliningrad,
+#name {
+  background: linear-gradient(
+    90deg,
+    #ffffff 0%,
+    #ff6c6b 10%,
+    #ff3333 50%,
+    #ff6c6b 90%,
+    #ffffff 100%
+  );
+  background-size: 200% 200%;
+  animation: gradient 8s ease infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }

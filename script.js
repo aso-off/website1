@@ -22,3 +22,21 @@ function updateTime() {
 
 setInterval(updateTime, 1000);
 updateTime();
+
+//гитхаб
+fetch("https://api.github.com/users/aso-off") // replace with your GitHub username
+  .then((response) => response.json())
+  .then((data) => {
+    document.getElementById("public-repos").textContent = data.public_repos;
+    document.getElementById("public-gists").textContent = data.public_gists;
+  })
+  .catch((error) => console.error("Error:", error));
+
+//новое
+function disableScroll() {
+  window.scrollTo(0, 0);
+  document.body.style.overflow = "hidden";
+}
+
+// Запрещаем прокрутку при загрузке страницы
+window.addEventListener("load", disableScroll);
