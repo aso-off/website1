@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js"></script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
@@ -41,44 +43,59 @@
       Hi there, I’m <span id="name">aso</span>👋
     </h1>
     <hr />
-    <h2 style="text-align: center; font-size: 40px; color: white">
-      Future fullstack-developer from Russia -
+    <h2
+      style="
+        text-align: center;
+        font-size: 40px;
+        color: white;
+        font-weight: bold;
+      "
+    >
+      Future <span id="fullstack">fullstack</span>-<span id="developer"
+        >developer</span
+      >
+      from Russia -
       <b><span id="kaliningrad">Kaliningrad</span></b>
     </h2>
-    <h3 style="margin-top: 50px; font-size: 30px">
-      I use or know these languages/frameworks:
+    <h3 style="margin-top: 55px; font-size: 33px">
+      I use or know these <span id="languages">languages</span>/<span
+        id="frameworks"
+        >frameworks</span
+      >:
     </h3>
     <div class="using">
       <div class="html">
         <img src="icons/file_type_html.svg" alt="" class="htmlLogo" />
-        <p style="font-weight: bold">HTML</p>
+        <p style="font-weight: bold" class="white">HTML</p>
       </div>
       <div class="css">
         <img src="icons/file_type_css.svg" alt="" class="cssLogo" />
-        <p style="font-weight: bold">CSS</p>
+        <p style="font-weight: bold" class="white">CSS</p>
       </div>
       <div class="javascript">
         <img src="icons/js_logo.svg" alt="" class="javascriptLogo" />
-        <p style="font-weight: bold">JavaScript</p>
+        <p style="font-weight: bold" class="white">JavaScript</p>
       </div>
       <div class="typescript">
         <img src="icons/typescript.svg" alt="" class="typescriptLogo" />
-        <p style="font-weight: bold">TypeScript</p>
+        <p style="font-weight: bold" class="white">TypeScript</p>
       </div>
       <div class="react">
         <img src="icons/file_type_reactjs.svg" alt="" class="reactLogo" />
-        <p style="font-weight: bold">React</p>
+        <p style="font-weight: bold" class="white">React</p>
       </div>
       <div class="vue">
         <img src="icons/file_type_vue.svg" alt="" class="vueLogo" />
-        <p style="font-weight: bold">VUE</p>
+        <p style="font-weight: bold" class="white">VUE</p>
       </div>
       <div class="json">
         <img src="icons/file_type_json.svg" alt="" class="jsonLogo" />
-        <p style="font-weight: bold">JSON</p>
+        <p style="font-weight: bold" class="white">JSON</p>
       </div>
     </div>
-    <h3 style="margin-top: 50px; font-size: 30px">My social networks:</h3>
+    <h3 style="margin-top: 55px; font-size: 33px">
+      My <span id="social">social</span> networks:
+    </h3>
     <div class="social">
       <a
         href="https://github.com/aso-off"

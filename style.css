@@ -55,7 +55,7 @@ p {
   display: flex;
   width: 150px;
   height: 60px;
-  border-radius: 15px;
+  border-radius: 18px;
   cursor: pointer;
 }
 .css {
@@ -64,7 +64,7 @@ p {
   display: flex;
   width: 150px;
   height: 60px;
-  border-radius: 15px;
+  border-radius: 18px;
   cursor: pointer;
 }
 .javascript {
@@ -73,7 +73,7 @@ p {
   display: flex;
   width: 200px;
   height: 60px;
-  border-radius: 15px;
+  border-radius: 18px;
   cursor: pointer;
 }
 .json {
@@ -82,7 +82,7 @@ p {
   display: flex;
   width: 150px;
   height: 60px;
-  border-radius: 15px;
+  border-radius: 18px;
   cursor: pointer;
 }
 .react {
@@ -91,7 +91,7 @@ p {
   display: flex;
   width: 150px;
   height: 60px;
-  border-radius: 15px;
+  border-radius: 18px;
   cursor: pointer;
 }
 .vue {
@@ -100,7 +100,7 @@ p {
   display: flex;
   width: 150px;
   height: 60px;
-  border-radius: 15px;
+  border-radius: 18px;
   cursor: pointer;
 }
 .typescript {
@@ -109,25 +109,7 @@ p {
   display: flex;
   width: 200px;
   height: 60px;
-  border-radius: 15px;
-  cursor: pointer;
-}
-.github {
-  background-color: #ffffffc3;
-  margin-left: 20px;
-  display: flex;
-  width: 180px;
-  height: 60px;
-  border-radius: 15px;
-  cursor: pointer;
-}
-.lolz {
-  background-color: #2e2e2e;
-  margin-left: 20px;
-  display: flex;
-  width: 180px;
-  height: 60px;
-  border-radius: 15px;
+  border-radius: 18px;
   cursor: pointer;
 }
 .telegram {
@@ -136,16 +118,34 @@ p {
   display: flex;
   width: 180px;
   height: 60px;
-  border-radius: 15px;
+  border-radius: 18px;
+  cursor: pointer;
+}
+.lolz {
+  background-color: #2e2e2e;
+  margin-left: 20px;
+  display: flex;
+  width: 180px;
+  height: 60px;
+  border-radius: 18px;
+  cursor: pointer;
+}
+.github {
+  background-color: #ffffffc3;
+  margin-left: 20px;
+  display: flex;
+  width: 160px;
+  height: 60px;
+  border-radius: 18px;
   cursor: pointer;
 }
 .steam {
   background-color: #2f6ad8cb;
   margin-left: 20px;
   display: flex;
-  width: 180px;
+  width: 160px;
   height: 60px;
-  border-radius: 15px;
+  border-radius: 18px;
   cursor: pointer;
 }
 @media (max-width: 1000px) {
@@ -173,7 +173,7 @@ img {
   padding: 6px;
 }
 .white {
-  color: white;
+  color: rgba(255, 255, 255, 0.89);
 }
 
 @media (max-width: 1000px) {
@@ -265,23 +265,24 @@ body {
     transform: scale(1.2);
   }
   100% {
-    transform: scale(1);
+    transform: scal e(1);
   }
 }
 /* время */
 #time-container {
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 16px;
+  right: 20px;
 }
 #time {
   color: white;
-  font-size: 24px;
+  font-size: 28px;
   font-weight: bold;
+  padding: 80px;
 }
 #date {
   color: white;
-  font-size: 24px;
+  font-size: 26px;
   font-weight: bold;
 }
 
@@ -349,30 +350,54 @@ body {
   overflow: hidden;
   height: 100%;
 }
-#kaliningrad,
-#name {
-  background: linear-gradient(
-    90deg,
-    #ffffff 0%,
-    #ff6c6b 10%,
-    #ff3333 50%,
-    #ff6c6b 90%,
-    #ffffff 100%
-  );
-  background-size: 200% 200%;
-  animation: gradient 8s ease infinite;
+#kaliningrad {
+  background-image: url(icons/water-60.gif);
+  background-size: cover;
+  background-position: center;
+  color: transparent;
+  background-clip: text;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  filter: brightness(600%);
+}
+.html:hover,
+.css:hover,
+.react:hover,
+.vue:hover,
+.json:hover,
+.javascript:hover,
+.typescript:hover,
+.telegram:hover,
+.github:hover,
+.lolz:hover,
+.steam:hover {
+  scale: 1.1;
+  transition: 0.1s ease;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+.html:hover p,
+.css:hover p,
+.react:hover p,
+.vue:hover p,
+.json:hover p,
+.javascript:hover p,
+.typescript:hover p,
+.telegram:hover p,
+.github:hover p,
+.lolz:hover p,
+.steam:hover p {
+  color: #ffffff;
 }
 
-@keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
+.html:hover img,
+.css:hover img,
+.react:hover img,
+.vue:hover img,
+.json:hover img,
+.javascript:hover img,
+.typescript:hover img,
+.telegram:hover img,
+.github:hover img,
+.lolz:hover img,
+.steam:hover img {
+  filter: brightness(108%);
 }

@@ -24,11 +24,10 @@ setInterval(updateTime, 1000);
 updateTime();
 
 //гитхаб
-fetch("https://api.github.com/users/aso-off") // replace with your GitHub username
+fetch("https://api.github.com/users/aso-off")
   .then((response) => response.json())
   .then((data) => {
     document.getElementById("public-repos").textContent = data.public_repos;
-    document.getElementById("public-gists").textContent = data.public_gists;
   })
   .catch((error) => console.error("Error:", error));
 
@@ -40,3 +39,7 @@ function disableScroll() {
 
 // Запрещаем прокрутку при загрузке страницы
 window.addEventListener("load", disableScroll);
+
+if (localStorage.getItem("myNotes")) {
+  tinymce.get("my-notes").setContent(localStorage.getItem("myNotes"));
+}
